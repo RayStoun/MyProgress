@@ -1,0 +1,44 @@
+A:link {
+ text-decoration: none; /* Убирает подчеркивание для ссылок */
+}
+h1 {
+ background: black; /* Цвет фона под заголовком */
+ color: white; /* Цвет текста */
+ padding: 30px; /* Поля вокруг текста */
+ width:100%auto;
+ margin-top: -10px;
+ margin-left: -1%;
+margin-right: -1%;
+}
+.layout {
+  font-size:15pt; border-style:groove;
+  background-color: black;
+  color: white;
+  width: 58%; top:95px;
+  position:absolute;
+  right: 280px;
+  text-align: justify;
+
+}
+  .tableUser{
+    width: 58%;
+    border-spacing: 1px;
+    font-size:13pt;
+    left:288px;
+    top:130px;
+       background-position: center ;
+      position:absolute;
+  }
+  .btn{
+    position:absolute;
+       margin-left: -10px;
+       width:130px; height:30px;
+  }
+  .li{
+    position:absolute;
+    top:180px;
+    left:-10px;
+    font-family: 'Times New Roman', Times, serif; /* Гарнитура текста */
+    font-size: 150%; /* Размер шрифта в процентах */
+
+  }
