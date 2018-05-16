@@ -106,7 +106,7 @@ namespace UsersAndRewardingPL_WinForms
         }
         private void UpdateUsersGrid()
         {
-            ctlDataGridViewRewards.AutoGenerateColumns = false;
+            ctlDataGridViewUsers.AutoGenerateColumns = false;
             var users = logic.GetUsersViewModel();
             ctlDataGridViewUsers.DataSource = users;
             ctlDataGridViewUsers.Refresh();
@@ -157,6 +157,36 @@ namespace UsersAndRewardingPL_WinForms
                 logic.UpdateReward(selectedReward);
                 UpdateRewardsGrid();
             }
-        }    
+        }
+
+        private void ctlDataGridViewUsers_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            ComapreAscendingSort comapreAscendingSort = new ComapreAscendingSort();
+            UserNameDescendingSort nameDescendingSort = new UserNameDescendingSort();
+
+            
+            var users = logic.GetUsersViewModel();
+            if (point == SortOrder.Asc)
+            {
+                users.Sort(comapreAscendingSort);
+                point = SortOrder.Desc;
+            }
+            else
+            {
+                users.Sort(nameDescendingSort);
+                point = SortOrder.Asc;
+
+            }
+            ctlDataGridViewUsers.DataSource = users;
+            ctlDataGridViewUsers.AutoGenerateColumns = false;
+            
+        }
+        private enum SortOrder
+        {
+            Asc,
+            Desc
+        }
+        private SortOrder point = SortOrder.Asc;
+        
     }
 }

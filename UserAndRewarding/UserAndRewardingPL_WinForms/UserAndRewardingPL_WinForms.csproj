@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComapreAscendingSort.cs" />
     <Compile Include="GeneralForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +73,7 @@
     <Compile Include="RewardForm\RewardForm.Designer.cs">
       <DependentUpon>RewardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserNameDescendingSort.cs" />
     <Compile Include="UsersForm\EditUser.cs">
       <SubType>Form</SubType>
     </Compile>

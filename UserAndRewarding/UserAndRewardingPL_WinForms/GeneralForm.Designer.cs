@@ -114,42 +114,42 @@
             // btnMenuAddUser
             // 
             this.btnMenuAddUser.Name = "btnMenuAddUser";
-            this.btnMenuAddUser.Size = new System.Drawing.Size(180, 22);
+            this.btnMenuAddUser.Size = new System.Drawing.Size(146, 22);
             this.btnMenuAddUser.Text = "Add user...";
             this.btnMenuAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
             // btnMenuAddReward
             // 
             this.btnMenuAddReward.Name = "btnMenuAddReward";
-            this.btnMenuAddReward.Size = new System.Drawing.Size(180, 22);
+            this.btnMenuAddReward.Size = new System.Drawing.Size(146, 22);
             this.btnMenuAddReward.Text = "Add reward...";
             this.btnMenuAddReward.Click += new System.EventHandler(this.btnMenuAddReward_Click);
             // 
             // btnMenuEditUser
             // 
             this.btnMenuEditUser.Name = "btnMenuEditUser";
-            this.btnMenuEditUser.Size = new System.Drawing.Size(180, 22);
+            this.btnMenuEditUser.Size = new System.Drawing.Size(146, 22);
             this.btnMenuEditUser.Text = "Edit user...";
             this.btnMenuEditUser.Click += new System.EventHandler(this.btnMenuEditUser_Click);
             // 
             // btnMenuEditReward
             // 
             this.btnMenuEditReward.Name = "btnMenuEditReward";
-            this.btnMenuEditReward.Size = new System.Drawing.Size(180, 22);
+            this.btnMenuEditReward.Size = new System.Drawing.Size(146, 22);
             this.btnMenuEditReward.Text = "Edit reward...";
             this.btnMenuEditReward.Click += new System.EventHandler(this.btnMenuEditReward_Click);
             // 
             // btnMenuDeleteUser
             // 
             this.btnMenuDeleteUser.Name = "btnMenuDeleteUser";
-            this.btnMenuDeleteUser.Size = new System.Drawing.Size(180, 22);
+            this.btnMenuDeleteUser.Size = new System.Drawing.Size(146, 22);
             this.btnMenuDeleteUser.Text = "Delete user";
             this.btnMenuDeleteUser.Click += new System.EventHandler(this.btnMenuDeleteUser_Click);
             // 
             // btnMenuDeleteReward
             // 
             this.btnMenuDeleteReward.Name = "btnMenuDeleteReward";
-            this.btnMenuDeleteReward.Size = new System.Drawing.Size(180, 22);
+            this.btnMenuDeleteReward.Size = new System.Drawing.Size(146, 22);
             this.btnMenuDeleteReward.Text = "Delete reward";
             this.btnMenuDeleteReward.Click += new System.EventHandler(this.btnMenuDeleteReward_Click);
             // 
@@ -227,6 +227,7 @@
             this.ctlDataGridViewUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ctlDataGridViewUsers.Size = new System.Drawing.Size(588, 279);
             this.ctlDataGridViewUsers.TabIndex = 0;
+            this.ctlDataGridViewUsers.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.ctlDataGridViewUsers_ColumnHeaderMouseClick);
             // 
             // clmId
             // 
@@ -333,26 +334,26 @@
             this.editRewardToolStripMenuItem,
             this.deleteRewardToolStripMenuItem});
             this.ctlContextMenuREwards.Name = "ctlContextMenuREwards";
-            this.ctlContextMenuREwards.Size = new System.Drawing.Size(181, 92);
+            this.ctlContextMenuREwards.Size = new System.Drawing.Size(156, 70);
             // 
             // ctlAddRewards
             // 
             this.ctlAddRewards.Name = "ctlAddRewards";
-            this.ctlAddRewards.Size = new System.Drawing.Size(180, 22);
+            this.ctlAddRewards.Size = new System.Drawing.Size(155, 22);
             this.ctlAddRewards.Text = "Add reward...";
             this.ctlAddRewards.Click += new System.EventHandler(this.ctlAddRewards_Click);
             // 
             // editRewardToolStripMenuItem
             // 
             this.editRewardToolStripMenuItem.Name = "editRewardToolStripMenuItem";
-            this.editRewardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editRewardToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.editRewardToolStripMenuItem.Text = "Edit reward...";
             this.editRewardToolStripMenuItem.Click += new System.EventHandler(this.editRewardToolStripMenuItem_Click);
             // 
             // deleteRewardToolStripMenuItem
             // 
             this.deleteRewardToolStripMenuItem.Name = "deleteRewardToolStripMenuItem";
-            this.deleteRewardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteRewardToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.deleteRewardToolStripMenuItem.Text = "Delete reward...";
             this.deleteRewardToolStripMenuItem.Click += new System.EventHandler(this.deleteRewardToolStripMenuItem_Click);
             // 
